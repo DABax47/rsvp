@@ -86,20 +86,13 @@ class App extends React.Component {
       <div className="App">
         <header>
           <h1>RSVP</h1>
-          <p>Useful React Fundementals</p>
+          <p>Demonstrate React Fundementals</p>
         <Form addNewGuest={this.addNewGuest} handleGuestInput={this.handleGuestInput} pendingGuest={this.state.pendingGuest}/>
         </header>
         <div className="main">
           <div>
             <h2>Invitees</h2>
-            <label>
-              <input
-                onChange={this.toggleFilter}
-                checked={this.state.isFiltered}
-                type="checkbox"
-              />{" "}
-              Hide those who haven't responded
-            </label>
+          
           </div>
           <Counter
             totalInvited={totalInvited}
